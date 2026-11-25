@@ -3,11 +3,11 @@
 Mobile-first cafe discovery MVP, built with React + Vite.
 
 ## Features
-- 26 starter listings from the conversation (11 Asia Top 100, 4 World Top 100)
+- 27 distinct café profiles, with 11 in the 2026 Asia-Pacific Top 100 and 4 in the 2026 World Top 100
 - Region, ranking, keyword and specialty filters
-- Ranking distinction: global, Asia, candidate, competition credentials
+- Per-location evidence for published rankings, historic editorial lists, candidate listings, and competition results
 - Favorites and visited checkboxes, saved locally on your device
-- Google Maps search links and official ranking references
+- Google Maps search links, verified source references, and attributed cover images
 - Responsive layouts
 
 ## Start
@@ -22,10 +22,8 @@ npm run build
 ```
 Deploy on Vercel with `Framework Preset: Vite`, `Build Command: npm run build`, `Output Directory: dist`.
 
-## Important data disclaimer
-Seed rankings are based on previous conversation and **have not been independently verified** against complete official records. Before publicly promoting ranking claims, verify the 2026 lists and award histories, update `src/data.js`, and ideally add per-entry source citations. Images are deliberate graphic placeholders, not photographs of the listed cafes. The Google Maps link is a search query and not a verified address. Local storage is device-specific and doesn't sync.
+## Editorial maintenance
 
-## Data maintenance
-Edit `src/data.js`: `global` and `asia` are ranks (numeric), `null` means not confirmed / not ranked. `extra` identifies competition provenance, not cafe rankings. Do not assume competition wins by founders are the shop's awards.
+See `src/data.js` for the audited sources, source date, award scope, and storefront names. The 2026 global and Asia-Pacific rankings come from the organizer. Historic Big 7 Travel lists are editorial rankings. FLTR selections are unranked. Competition results name the award recipient. Rufous's original shop and second shop have separate profiles.
 
-Sources: [Global Top 100](https://theworlds100bestcoffeeshops.com/top-100-coffee-shops/) | [Asia Top 100](https://theworlds100bestcoffeeshops.com/top-100-coffee-shops-asia/) | [Taiwan candidates](https://theworlds100bestcoffeeshops.com/asia-pacific-100-best-coffee-shops/taiwan/) | [World Coffee Championships](https://wcc.coffee/)
+Cover photography is attributed on the site. The Simple Kaffa flagship and Fika Fika Cafe storefront photos are provided by the Taiwan Visitors Association through the Open Government Data License v1. Generic coffee photography from Unsplash is labeled as illustrative. Google Maps links search for each shop by name. Favorites and visit history remain device-specific.
